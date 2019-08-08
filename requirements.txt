@@ -1,0 +1,7 @@
+# Flask
+
+Flask==1.1.1
+
+
+# Excel
+openpyxl==2.6.2
