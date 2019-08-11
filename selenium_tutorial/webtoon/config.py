@@ -1,4 +1,7 @@
 # json 으로 바꿔도 좋습니다. 한 번 해볼까요?
+NAVER_WEBTOON_URL = 'https://comic.naver.com/webtoon/weekdayList.nhn?week='
+NAVER_HOME_URL = 'https://www.naver.com'
+
 
 favorites = {
     0: '신의 탑', # 월
@@ -31,3 +34,4 @@ account = {
     'account': 'aliwo',
     'password': 'na741stine!'
 }
+

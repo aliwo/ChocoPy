@@ -3,6 +3,3 @@
 
 # chrome driver 설치 사이트 https://chromedriver.chromium.org/
 
-NAVER_WEBTOON_URL = 'https://comic.naver.com/webtoon/weekdayList.nhn?week='
-NAVER_HOME_URL = 'https://www.naver.com'
-

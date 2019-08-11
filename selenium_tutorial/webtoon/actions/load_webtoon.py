@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from selenium_tutorial import NAVER_WEBTOON_URL
+from selenium_tutorial.webtoon.config import NAVER_WEBTOON_URL
 
 
 def load_webtoon(driver, name):
