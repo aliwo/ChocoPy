@@ -1,0 +1,4 @@
+
+class NoRecipeFound(Exception):
+    pass
+

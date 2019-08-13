@@ -1,0 +1,4 @@
+
+class NotEnoughIngredient(Exception):
+    pass
+
