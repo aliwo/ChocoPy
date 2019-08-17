@@ -15,8 +15,8 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
 driver = webdriver.Chrome('../chromedriver.exe', chrome_options=options)
 
-driver.get('https://www.naver.com')
 load_webtoon(driver, favorites[datetime.now().weekday()])
+# 아니 될 때 안 될때가 따로 있네? 재부팅 하면 되고 ㅋㅌㅋㅋㅋㅋ
 
 
 
