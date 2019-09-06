@@ -5,8 +5,8 @@ NAVER_LOGIN_URL = 'https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2
 
 favorites = {
     0: '신의 탑', # 월
-    1: '',
-    2: '그 판타지 세계에서 사는 법',
+    1: '마음의소리',
+    2: '안녕',
     3: '쿠베라',
     4: '열렙전사',
     5: '열렙전사',

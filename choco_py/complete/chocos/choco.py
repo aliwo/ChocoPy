@@ -6,6 +6,7 @@ class Choco:
     kakao = 60
     sugar = 120
     milk = 100
+    price = 1000
 
     def init(self, factory):
         factory.kakao -= self.kakao

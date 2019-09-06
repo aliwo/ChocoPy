@@ -7,8 +7,8 @@ from selenium_tutorial.webtoon.actions.load_webtoon_failover import load_webtoon
 
 
 # load_webtoon(driver, favorites[datetime.now().weekday()])
-login(driver, account)
-# load_webtoon2(driver, favorites[datetime.now().weekday()])
+# login(driver, account)
+load_webtoon2(driver, favorites[datetime.now().weekday()])
 
 
 

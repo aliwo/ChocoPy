@@ -10,9 +10,14 @@ class WareHouse():
     dark_chocos = []
 
     def __init__(self):
-        pass
+        self.chocos_dict = {
+            '초코': self.chocos,
+            '밀크초코': self.milk_chocos,
+            '다크초코': self.dark_chocos,
+        }
 
     def store(self, choco):
+        # TODO: append 와 pop() 만 사용하면 바닥에서 썩는 초코가 생기겠죠? queue 를 사용해 볼까요?
         if isinstance(choco, Choco):
             self.chocos.append(choco)
             return
@@ -25,3 +30,8 @@ class WareHouse():
             self.dark_chocos.append(choco)
             return
 
+    def peek(self, choco_name):
+        return len(self.chocos_dict[choco_name])
+
+    def pop(self, choco_name):
+        return self.chocos_dict[choco_name].pop()

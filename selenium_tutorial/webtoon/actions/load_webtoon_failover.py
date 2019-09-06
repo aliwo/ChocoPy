@@ -10,10 +10,9 @@ def load_webtoon(driver, name):
 
     driver.find_element(By.XPATH, f"//*[text()='{name}']" ).click()
     latest_episode = WebDriverWait(driver, 20).until(
-        EC.element_to_be_clickable((By.XPATH,
-                                    '//*[@id="content"]/table/tbody/tr[2]/td[1]/a'))
+        EC.element_to_be_clickable((By.CSS_SELECTOR,
+                                    '#content > table > tbody > tr > td.title'))
     )
-    latest_episode.click()
 
-
+    latest_episode.find_element_by_tag_name('a').click()
 
