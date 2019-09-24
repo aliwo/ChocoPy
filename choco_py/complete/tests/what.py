@@ -2,7 +2,7 @@ from choco_py.complete.factory import Factory
 from choco_py.complete.warehouse import WareHouse
 
 
-def test_make_choco():
+def test_what():
     '''
     TODO: factory 를 fixture 로 만들어 볼까요 ?
     '''
@@ -13,7 +13,3 @@ def test_make_choco():
     print(choco.format_report())
     # assert 0
     assert choco
-    return choco
-
-
-

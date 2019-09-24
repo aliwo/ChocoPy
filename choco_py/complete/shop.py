@@ -10,7 +10,7 @@ class Shop():
     def __init__(self, warehouse):
         self.warehouse = warehouse
 
-    def sell(self, money ,order_spec):
+    def sell(self, money, order_spec):
         '''
         초코 객체와 거스름돈이 담긴 dict 를 리턴
         '''
@@ -24,14 +24,14 @@ class Shop():
             'change': money
         }
 
-        for key, value in order_spec:
+        for key, value in order_spec.items():
             if self.warehouse.peek(key) < value:
                 return # 재고 부족!
             result['change'] -= (self.choco_price[key] * value)
             if result['change'] < 0:
                 return # 금액 부족!
 
-        for key, value in order_spec:
+        for key, value in order_spec.items():
             for _ in range(value):
                 result['chocos'].append(self.warehouse.pop(key))
 

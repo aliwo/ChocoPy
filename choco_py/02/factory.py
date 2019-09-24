@@ -1,50 +1,36 @@
-# 이곳은 초코 공장입니다.
+kakao = 10  # 더 이상 재료가 없다!
+sugar = 20
+milk = 100
 
 
-# 다음은 공장의 총 재료양 입니다.
-kakao = 1000
-sugar = 1000
-milk = 1000
-
-choco = 5
-milk_choco = 1
-dark_choco = 1
+def choco_ingredients():
+    return 60, 120, 100  # 필요한 재료의 양만 알려준다.
 
 
-def get_choco_ingredients():
-    return 60, 120, 100
-
-
-def get_milk_choco_ingredients():
+def milk_choco_ingredients():
     return 60, 120, 200
 
 
-def get_dark_choco_ingredients():
-    return 90, 120, 100
+def dark_choco_ingredients():
+    return 60, 120, 200
 
 
-def report(choco, milk_choco, dark_choco):
-    '''
-    전역변수에 접근해도 되긴 함!
-    '''
-    print('현재 보유하고 있는 초코의 양은 다음과 같습니다.')
-    print(f'초코: {choco}개')
-    print(f'밀크 초코: {milk_choco}개')
-    print(f'다크 초코: {dark_choco}개')
+# 재료가 없는데 초코를 만든다?
+k, s, m = choco_ingredients()
 
+kakao_need = kakao - k < 0
+sugar_need = sugar - s < 0
+milk_need = milk - m < 0
 
-for i in range(10):
-    k, s, m = get_choco_ingredients()
-    if kakao >= k and sugar >= s and milk >= m:
-        kakao -= k
-        sugar -= s
-        milk -= m
-        choco += 1
-    else:
-        print('재료가 부족합니다!')
-        break
+if kakao_need:
+    print('카카오 부족')
+if sugar_need:
+    print('설탕 부족')
+if milk_need:
+    print('우유 부족')
 
-
-
-
+if kakao_need and sugar_need and milk_need:
+    kakao -= k
+    sugar -= s
+    milk -= m
 
