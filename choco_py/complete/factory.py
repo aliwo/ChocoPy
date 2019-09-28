@@ -1,3 +1,5 @@
+from abc import ABC
+
 from choco_py.complete.chocos.choco import Choco
 from choco_py.complete.chocos.dark_choco import DarkChoco
 from choco_py.complete.chocos.milk_choco import MilkChoco
@@ -33,20 +35,24 @@ class Factory:
         API 에서 쓰일 함수
         '''
         if name not in self.choco_dict:
-            raise NoRecipeFound(name)
+            pass
+            # raise NoRecipeFound(name)
 
         choco = self.choco_dict[name]
 
         k, s, m = choco.requirements()
 
         if self.kakao < k:
-            raise NotEnoughIngredient('kakao')
+            pass
+            # raise NotEnoughIngredient('kakao')
 
         if self.sugar < s:
-            raise NotEnoughIngredient('sugar')
+            pass
+            # raise NotEnoughIngredient('sugar')
 
         if self.milk < m:
-            raise NotEnoughIngredient('milk')
+            pass
+            # raise NotEnoughIngredient('milk')
 
         self.warehouse.store(choco(self))
 

@@ -1,5 +1,20 @@
+from choco_py.complete.chocos.choco import Choco
 from choco_py.complete.factory import Factory
 from choco_py.complete.warehouse import WareHouse
+
+
+def test_hi_choco():
+    Choco()
+
+
+
+
+
+
+
+
+
+
 
 
 def test_make_choco():

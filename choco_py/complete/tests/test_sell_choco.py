@@ -18,7 +18,6 @@ def test_sell_choco():
     print()
     for choco in result['chocos']:
         print(choco.format_report())
-    assert 0
 
 
 
