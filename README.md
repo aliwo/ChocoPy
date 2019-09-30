@@ -10,4 +10,4 @@
 
 * 초콜릿 공장 시뮬레이터 어플리케이션을 만들어 보며 파이썬 기초 문법에 대해 배웁니다.
 * 객체지향의 원리를 알아봅니다. 상속, 다형성, 추상화, 캡슐화
-* 데코레이터, 제너레이터, List Comprehension 및 Dict Comprehension 을 이해합니다.
+* 파이썬 고급 문법 데코레이터, 제너레이터, List Comprehension 및 Dict Comprehension 을 이해합니다.
